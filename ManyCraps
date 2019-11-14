@@ -57,13 +57,13 @@ public class ManyCraps {
     winTotal++;
    } else {
     GamesLost[roll]++;
-    loseTotal++;
+    lostTotal++;
    }
   }
   printStats();
  }
  public void printStats() {
-  int totalGames = winTotal + loseTotal;
+  int totalGames = winTotal + lostTotal;
   int length = 0;
   int RollsToWin;
   int RollsToLose;
@@ -89,7 +89,7 @@ public class ManyCraps {
          (16 * GamesLost[16]) + (17 * GamesLost[17]) + (18 * GamesLost[18]) + (19 * GamesLost[19]) +
          (20 * GamesLost[20]) + (21 * GamesLost[21]);
 
-   length = (RollsToLose + loseTotal) + (RollsToWin + winTotal);
+   length = (RollsToLose + lostTotal) + (RollsToWin + winTotal);
 
   }
   if ((GamesWon[1] / GamesWon[1] + GamesLost[1]) > (GamesWon[3] / GamesWon[3] + GamesLost[3]) && (GamesWon[3] / GamesWon[3] + GamesLost[3]) > (GamesWon[5] / GamesWon[5] + GamesLost[5]))
