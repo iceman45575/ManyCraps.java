@@ -15,7 +15,7 @@ public class ManyCraps {
  int[] GamesWon;
  int[] GamesLost;
  int winTotal;
- int loseTotal;
+ int lostTotal;
 
  public void play() {
   int totalOfDice = 0;
